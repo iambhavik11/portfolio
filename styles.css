@@ -1,0 +1,132 @@
+ /* Global Types
+ ---------------------------------------*/
+ body {
+	color: #343434;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	background-size: cover;
+  }
+  img {
+	width: 25vw;
+  }
+  a {
+	color: #6B7AA1;
+  }
+  a:hover {
+	text-decoration: none;
+  }
+  h1 {
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 40px;
+	margin-bottom: 0;
+  }
+  h2 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 28px;
+	margin: 0;
+  }
+  .content-wrap {
+	max-width: 900px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 40px 0;
+  }
+
+  /* Profile
+ ---------------------------------------*/
+  header {
+	background-color: #11324D;
+	color: #90AACB;
+	text-align: center;
+  }
+
+  /* Projects
+ ---------------------------------------*/
+  .projects {
+	background: #D3DEDC;
+  }
+  .projects a {
+	color: #1A374D;
+  }
+  .projects .btn {
+	color: #B1D0E0;
+	text-decoration: none;
+	background: #1A374D;
+	padding: 8px;
+	border-radius: 4px;
+	display: inline-block;
+  }
+  .projects .btn:hover {
+	background: rgba(26, 55, 77, 0.8);
+  }
+
+  
+/* Work Experience
+ ---------------------------------------*/
+  .work-experience {
+	background: #6998AB;
+  }
+
+  /* Education
+ ---------------------------------------*/
+ .flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content:space-between;
+	margin-bottom: 1em;
+  }
+  .flex-items:nth-child(1) , .flex-items:nth-child(2){
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+  }
+  
+/* Contact Info
+ ---------------------------------------*/
+  footer {
+	background: #041C32;
+	text-align: center;
+  }
+  footer h2 {
+	color: #90AACB;
+  }
+  footer ul{
+	  display: flex;
+	  justify-content: space-around;
+  }
+  footer ul li {
+	list-style: none;
+	padding: 0;
+  }
+  footer ul li a {
+	text-decoration: none;
+	padding: 15px;
+	display: inline-block;
+  }
+
+  /* Media Screen--
+  -------------------------------------------*/
+
+  @media screen and (max-width: 620px) {
+	.flex-container {
+		display: flex;
+		flex-direction:column-reverse;
+		flex-wrap: nowrap;
+		justify-content:space-between;
+		margin-bottom: 1em;
+	  }
+	  footer ul{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: -40px;
+	  }
+	  img{
+		  width: 65vw;
+	  }
+  }
